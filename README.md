@@ -41,9 +41,20 @@ class PIDController:
 
 ### Parameters:
 
-Kp: Controls how large the control signal is for a given error.
-Ki: Accounts for past errors and integrates them over time.
-Kd: Accounts for future error trends based on its current rate of change.
-Umin and Umax: The minimum and maximum control signals that can be applied.
-PID Controller Input Calculation
+- **Kp**: Controls how large the control signal is for a given error.
+- **Ki**: Accounts for past errors and integrates them over time.
+- **Kd**: Accounts for future error trends based on its current rate of change.
+- **Umin and Umax**: The minimum and maximum control signals that can be applied.
+  
+## PID Controller Input Calculation
 After setting up the PID controller, the PID controller’s calc_input method is called with the set point and the process variable as arguments. This method will calculate the appropriate control action based on the difference between the set point and the process variable.
+
+
+```python
+def calculate_the_control_signal(bird: Bird, pipe: Pipe):
+    """Calculate the control signal for the bird."""
+    sp = pipe.h + pipe.gap / 2
+    pv = bird.y + bird.h / 2
+    u_jump = pid.calc_input(sp, pv)
+    return u_jump
+```

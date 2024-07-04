@@ -60,6 +60,4 @@ def calculate_the_control_signal(bird: Bird, pipe: Pipe):
 ```
 
 
-<div style="text-align: center;">
-  <a href="https://github.com/pengyumu/Bird-Flight-Control/assets/174324735/d0df0b7a-0619-47f1-bda3-0c5a306692d8" target="_blank">Watch the Video</a>
-</div>
+              https://github.com/pengyumu/Bird-Flight-Control/assets/174324735/d0df0b7a-0619-47f1-bda3-0c5a306692d8

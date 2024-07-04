@@ -4,9 +4,6 @@ This project aims to design a controller for an agent that manages the movement 
 
 ### PID Controller Setup
 The PID controller aims to adjust the bird’s flight so that it can navigate through gaps between pipes effectively. The implementation of the PID controller is shown as:
-## PID Controller Setup
-
-The PID controller aims to adjust the bird’s flight so that it can navigate through gaps between pipes effectively. The implementation of the PID controller is shown as:
 
 ```python
 class PIDController:
@@ -39,4 +36,14 @@ class PIDController:
         else:
             u = pid
 
-        return u
+        return u```
+
+
+Parameters:
+
+Kp: Controls how large the control signal is for a given error.
+Ki: Accounts for past errors and integrates them over time.
+Kd: Accounts for future error trends based on its current rate of change.
+Umin and Umax: The minimum and maximum control signals that can be applied.
+PID Controller Input Calculation
+After setting up the PID controller, the PID controller’s calc_input method is called with the set point and the process variable as arguments. This method will calculate the appropriate control action based on the difference between the set point and the process variable.

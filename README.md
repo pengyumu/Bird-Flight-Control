@@ -141,3 +141,4 @@ def calculate_the_control_signal(bird: Bird, pipe: Pipe) -> float:
     return u_jump
 
 ```
+https://github.com/pengyumu/Bird-Flight-Control/assets/174324735/896a9fd6-8798-4b0a-8927-717decb14b8f

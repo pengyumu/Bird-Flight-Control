@@ -2,7 +2,7 @@
 
 This project aims to design a controller for an agent that manages the movement of a bird in a game similar to the popular "Flappy Bird". The goal is to create a controller that allows the bird to navigate through the pipes for as long as possible, maximizing the accumulation of points. This involves programming the agent to autonomously control the bird's vertical acceleration.
 
-### PID Controller Setup
+## PID Controller Setup
 The PID controller aims to adjust the bird’s flight so that it can navigate through gaps between pipes effectively. The implementation of the PID controller is shown as:
 
 ```python
@@ -39,7 +39,7 @@ class PIDController:
         return u
 ```
 
-Parameters:
+### Parameters:
 
 Kp: Controls how large the control signal is for a given error.
 Ki: Accounts for past errors and integrates them over time.

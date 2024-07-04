@@ -58,4 +58,11 @@ def calculate_the_control_signal(bird: Bird, pipe: Pipe):
     u_jump = pid.calc_input(sp, pv)
     return u_jump
 ```
-https://github.com/pengyumu/Bird-Flight-Control/assets/174324735/d0df0b7a-0619-47f1-bda3-0c5a306692d8
+
+
+<div style="text-align: center;">
+  <video width="600" controls>
+    <source src="https://github.com/pengyumu/Bird-Flight-Control/assets/174324735/d0df0b7a-0619-47f1-bda3-0c5a306692d8" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>

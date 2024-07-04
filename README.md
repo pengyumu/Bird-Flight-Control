@@ -4,7 +4,12 @@ This project aims to design a controller for an agent that manages the movement 
 
 ### PID Controller Setup
 The PID controller aims to adjust the bird’s flight so that it can navigate through gaps between pipes effectively. The implementation of the PID controller is shown as:
- `class PIDController:
+## PID Controller Setup
+
+The PID controller aims to adjust the bird’s flight so that it can navigate through gaps between pipes effectively. The implementation of the PID controller is shown as:
+
+```python
+class PIDController:
     kp: float = 0.5
     ki: float = 0.005
     kd: float = 200
@@ -34,4 +39,4 @@ The PID controller aims to adjust the bird’s flight so that it can navigate th
         else:
             u = pid
 
-        return u'
+        return u

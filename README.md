@@ -64,9 +64,9 @@ https://github.com/pengyumu/Bird-Flight-Control/assets/174324735/d0df0b7a-0619-4
 
 ## Optimization-based controller 
 ### Model Predictive Control (MPC) Setup:
-- **.**：Initialize a Pyomo model with a prediction horizon (N) and a discrete time step (dt).
-- **.**：Define control variables (u) within specified bounds to represent the bird’s jump intensity over the prediction horizon. Given the gravity -50, here the bounds are set as (40,60), this can help to avoid instability.
-- **.**：Set up a mutable parameter (T_target) to represent the target height (the midpoint of the gap between pipes) that the bird aims to navigate through.
+- Initialize a Pyomo model with a prediction horizon (N) and a discrete time step (dt).
+- Define control variables (u) within specified bounds to represent the bird’s jump intensity over the prediction horizon. Given the gravity -50, here the bounds are set as (40,60), this can help to avoid instability.
+- Set up a mutable parameter (T_target) to represent the target height (the midpoint of the gap between pipes) that the bird aims to navigate through.
 Dynamics and Constraints:
 Implement dynamic constraints for the bird’s vertical position (y) and velocity (vy) based on simple physics equations, incorporating the control action (u) and gravity.
 Use Pyomo variables and constraints to model these dynamics within the prediction horizon.
